@@ -1,5 +1,4 @@
 # Bimarakshak_AI
-# BimaRakshak AI
 
 ## AI-Driven Motor Insurance Risk Assessment System
 
