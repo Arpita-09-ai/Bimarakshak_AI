@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BimaRakshak AI | DBE Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white py-5 shadow-md">
+    <h1 class="text-center text-3xl font-bold">🚗 BimaRakshak AI</h1>
+    <p class="text-center text-sm mt-1">AI-Driven Motor Insurance Risk Assessment System</p>
+  </header>
+
+  <!-- Introduction -->
+  <section class="max-w-4xl mx-auto mt-10 bg-white p-6 rounded-2xl shadow">
+    <h2 class="text-2xl font-semibold mb-2">Project Introduction</h2>
+    <p>
+      BimaRakshak AI is a database-driven system that uses AI and IoT data to assess
+      real-time driving behavior for fairer motor insurance premium calculations. The project
+      demonstrates core Database Engineering concepts such as ER modeling, normalization,
+      and SQL-based data management.
+    </p>
+  </section>
+
+  <!-- ER Diagram Section -->
+  <section class="max-w-4xl mx-auto mt-8 bg-white p-6 rounded-2xl shadow">
+    <h2 class="text-2xl font-semibold mb-4">ER Diagram</h2>
+    <p>The ER diagram represents the relationships between Drivers, Vehicles, Trips, and Risk Scores.</p>
+    <div class="mt-4 border-2 border-dashed border-gray-300 rounded-xl p-4 text-center text-gray-500">
+      📊 <em>Upload or display your ER diagram image here</em>
+    </div>
+  </section>
+
+  <!-- Database Tables -->
+  <section class="max-w-4xl mx-auto mt-8 bg-white p-6 rounded-2xl shadow">
+    <h2 class="text-2xl font-semibold mb-4">Database Schema</h2>
+
+    <table class="w-full text-left border-collapse border border-gray-300">
+      <thead class="bg-blue-100">
+        <tr>
+          <th class="border p-2">Table</th>
+          <th class="border p-2">Primary Key</th>
+          <th class="border p-2">Foreign Keys</th>
+          <th class="border p-2">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border p-2 font-semibold">Drivers</td>
+          <td class="border p-2">DriverID</td>
+          <td class="border p-2">-</td>
+          <td class="border p-2">Stores driver details</td>
+        </tr>
+        <tr>
+          <td class="border p-2 font-semibold">Vehicles</td>
+          <td class="border p-2">VehicleID</td>
+          <td class="border p-2">DriverID</td>
+          <td class="border p-2">Stores vehicle info linked to driver</td>
+        </tr>
+        <tr>
+          <td class="border p-2 font-semibold">Trips</td>
+          <td class="border p-2">TripID</td>
+          <td class="border p-2">DriverID, VehicleID</td>
+          <td class="border p-2">Records trip data (distance, speed, etc.)</td>
+        </tr>
+        <tr>
+          <td class="border p-2 font-semibold">RiskScores</td>
+          <td class="border p-2">ScoreID</td>
+          <td class="border p-2">TripID</td>
+          <td class="border p-2">Stores AI-generated risk metrics</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Reports Section -->
+  <section class="max-w-4xl mx-auto mt-8 bg-white p-6 rounded-2xl shadow">
+    <h2 class="text-2xl font-semibold mb-4">Reports Generated</h2>
+    <ul class="list-disc ml-6">
+      <li><strong>Driver Risk Scores:</strong> Aggregates risk per driver from trips.</li>
+      <li><strong>Accident-Prone Zones:</strong> Identifies areas with frequent risky behavior.</li>
+      <li><strong>Driver Feedback:</strong> Suggests safer driving practices based on data.</li>
+    </ul>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center mt-10 py-4 text-gray-600 text-sm">
+    © 2025 BimaRakshak AI | Developed as part of Database Engineering Project
+  </footer>
+</body>
+</html>
